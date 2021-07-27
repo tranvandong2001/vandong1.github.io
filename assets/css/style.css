@@ -1,0 +1,735 @@
+.header {
+    height: 80px;
+}
+
+.header__logo {
+    display: inline-block;
+}
+
+.header_search {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 16px 45px;
+    border-bottom: 1px solid #f4f4f4;
+    z-index: 1;
+    background-color: #fff;
+    ;
+}
+
+.header__search-left {
+    display: flex;
+    width: 49.9999%;
+}
+
+.header__search-box {
+    width: 83%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left: 16px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+}
+
+.header__search-field {
+    width: 300px;
+}
+
+.header__search-people-text {}
+
+.header__search-location {
+    display: flex;
+    position: relative;
+}
+
+.header__search-location-link {
+    font-size: 1.4rem;
+    color: #ccc;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+}
+
+.header__search-input {}
+
+.header__search-text {
+    outline: none;
+    border: none;
+    padding: 10px 34px;
+    color: #000;
+    width: 100%;
+}
+
+.header__search-people-icon,
+.header__search-booking-icon {
+    padding: 0 8px;
+}
+
+.header__search-booking-text {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.header__search-booking,
+.header__search-people {
+    width: 114px;
+    font-size: 1.4rem;
+    color: #222222;
+}
+
+.header__search-booking::after,
+.header__search-people::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 37px;
+    position: absolute;
+    background-color: #ccc;
+    top: 24px;
+}
+
+.header__search-right {
+    line-height: 50px;
+}
+
+.header__search-right-list {
+    display: flex;
+}
+
+.header__search-right-item {
+    list-style: none;
+}
+
+.header__search-right-item-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0 15px;
+    color: #2c2222;
+    font-weight: 600;
+}
+
+.header__search-right-item-link:hover {
+    color: #f88739;
+}
+
+.header__search-booking-link {
+    color: #000;
+    text-decoration: none;
+    padding: 18px 0;
+}
+
+.header__search-btn {
+    flex: 1;
+    display: inline-block;
+}
+
+.header__search-btn-link {
+    text-decoration: none;
+    color: #fff;
+    background: #555555;
+    padding: 12px 20px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.header__search-btn-icon {
+    font-size: 1.3rem;
+}
+
+.header__search-right-item-img {
+    width: 20px;
+}
+
+.highlight {
+    background-color: #f6f6f6;
+    border-radius: 50px;
+    padding: 12px 10px;
+}
+
+.header__search-child {
+    position: absolute;
+    top: 79px;
+    left: 461px;
+    width: 320px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
+    border-radius: 3px;
+    color: #525252;
+    font-size: 1.6rem;
+    display: none;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.header__search-child-amount {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 12px;
+}
+
+.header__search-child-heading {}
+
+.header__search-child-heading-text {
+    display: block;
+    text-align: left;
+}
+
+.header__search-child-count-text {
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+.header__search-child-count-icon {
+    color: #000;
+    background-color: #fbfcfd;
+    padding: 8px 16px;
+    font-size: 2.7rem;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.header__search-child-remove {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 16px;
+}
+
+.header__search-child-rmv {}
+
+.primary {
+    color: #f88739;
+}
+
+.empty {
+    color: #ccccd1;
+    background-color: #fbfcfd;
+    padding: 8px 16px;
+    font-size: 2.7rem;
+    border-radius: 50%;
+}
+
+.header__search-text-child {
+    color: #7c7c7c;
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.changeImg {
+    margin: 40px 0;
+    position: relative;
+}
+
+.changeImg__img {
+    height: 300px;
+    width: 100%;
+    border-radius: 30px;
+    animation: changeImg linear 0.4s;
+}
+
+@keyframes changeImg {
+    from {
+        right: 0;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.content__introduce {
+    margin-bottom: 50px;
+}
+
+.content__introduce-heading {
+    font-size: 3rem;
+}
+
+.content__introduce-text {
+    margin: 19px 0 11px 0;
+    font-size: 1.7rem;
+}
+
+.content__introduce-text-link {
+    color: #000;
+}
+
+.content__place,
+.content__endow,
+.content__suggest,
+.content__discover,
+.content__tutorial {
+    margin-bottom: 74px;
+}
+
+.content__place-photo {}
+
+.content__place-child {
+    position: relative;
+}
+
+.content__place-img {
+    width: 100%;
+    height: 308px;
+    border-radius: 3px;
+}
+
+.content_place-info {
+    position: absolute;
+    top: 73%;
+    left: 20px;
+    color: #fff;
+}
+
+.content__place-heading {
+    font-size: 2.5rem;
+}
+
+.content__place-text {
+    font-size: 1.7rem;
+    margin: 7px 0;
+}
+
+.content__endow-slide {}
+
+.content__endow-link {}
+
+.content__endow-slide-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.content__suggest-link {
+    text-decoration: none;
+    color: #6d7178;
+}
+
+.content__suggest-img {
+    border-radius: 3px;
+    width: 100%;
+}
+
+.content__suggest-info {
+    display: block;
+    margin-top: 8px;
+}
+
+.content__suggest-heading {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.content__suggest-text {
+    display: block;
+    margin-top: 8px;
+    line-height: 1.4;
+    font-size: 1.6rem;
+}
+
+.content__suggest-link:hover {
+    color: #f99177;
+}
+
+.content__discover-link {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.content__discover-photo {}
+
+.content__discover-photo-img {
+    border-radius: 3px;
+    width: 100%;
+    height: 265px;
+    filter: brightness(80%);
+}
+
+.content__discover-info {
+    position: absolute;
+    top: 0;
+    left: 25px;
+}
+
+.content__discover-heading-small {
+    margin-top: 32px;
+    color: #e5ebef;
+    background-color: rgba(0, 0, 0, .2);
+    display: inline-block;
+    padding: 3px 32px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 32px 0 140px 0;
+}
+
+.content__discover-heading {
+    color: #fefefe;
+}
+
+.content__tutorial-img {
+    width: 100%;
+}
+
+.content__download-img {
+    border: 1px solid #eaeaea;
+    padding: 10px;
+}
+
+.content__download-img,
+.content__download-app-img {
+    width: 90%;
+}
+
+.content__download-app-img {
+    border-radius: 10px;
+}
+
+.content__download-logo {
+    width: 50%;
+}
+
+.content__download-info {
+    margin: 20px 0 78px 0;
+}
+
+.content__download-heading {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.content__download-text {
+    margin-top: 40px;
+    line-height: 1.4;
+    font-size: 1.7rem;
+}
+
+.content__download-app {
+    margin-top: 10px;
+}
+
+.margin-32 {
+    margin-top: 32px;
+}
+
+.content__download-right {
+    width: 100%;
+}
+
+.footer {
+    margin: 64px 0 58px 0;
+}
+
+.footer__top {
+    padding-bottom: 64px;
+}
+
+.content__top-contact-logo {
+    width: 70%;
+}
+
+.footer__top-contact {}
+
+.footer__top-contact-call {
+    margin-top: 18px;
+}
+
+.footer__top-contact-call .footer__top-contact-child-link:hover {
+    color: #f99177;
+}
+
+.footer__top-contact-child-bottom {}
+
+.footer__top-contact-logo {}
+
+.footer__top-contact-logo-icon {
+    font-size: 3rem;
+    line-height: 47px;
+}
+
+.footer__top-contact-child {}
+
+.footer__top-contact-child-heading {}
+
+.footer__top-contact-child-link {
+    display: block;
+    margin-top: 6px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #5b514f;
+}
+
+.margin-top-32 {
+    margin-top: 32px;
+}
+
+.padding-notify {
+    padding: 0 !important;
+}
+
+.footer__top-list-item-link:hover {
+    color: #f99177;
+}
+
+.footer__top-heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer__top-list {
+    list-style: none;
+    padding-top: 18px;
+}
+
+.footer__top-list-item {
+    margin-top: 16px;
+}
+
+.footer__top-list-item-link {
+    text-decoration: none;
+    color: #3e3d3c;
+    font-size: 1.5rem;
+    padding: 6px 0;
+}
+
+.footer__top-download-app {
+    margin-top: 34px;
+}
+
+.footer__top-download-link {
+    text-decoration: none;
+}
+
+.footer__bottom {
+    text-align: center;
+    margin: 28px 0;
+    border-top: 1px solid #fafafa;
+    padding-top: 20px;
+}
+
+.footer__bottom-info {
+    line-height: 1.6;
+}
+
+.footer__bottom-text {
+    font-size: 1.6rem;
+    color: #a3a5a6;
+}
+
+
+/* Login */
+
+.welcome {
+    background-image: linear-gradient(to right, #f66239, #f68839, #f66239);
+    /* position: relative; */
+}
+
+.welcome-info {
+    padding: 54px 110px;
+    color: #fff;
+}
+
+.welcome__info-heading {
+    font-size: 2.4rem;
+}
+
+.welcome__info-text {
+    margin-top: 24px;
+    display: block;
+    font-size: 2rem;
+}
+
+.container {
+    margin: 48px 0 190px 0;
+}
+
+.container__utilities-img {
+    width: 15%;
+}
+
+.container__utilities-heading {
+    margin: 30px 0 22px 0;
+}
+
+.container__utilities-text {
+    font-size: 1.7rem;
+    line-height: 1.4;
+    margin-bottom: 56px;
+    display: block;
+    color: #6d6477;
+}
+
+.container__form {
+    background-color: #fff;
+    position: absolute;
+    top: 150px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 9px 46px 8px rgb(0 0 0 / 2%), 0 24px 38px 3px rgb(0 0 0 / 4%), 0 11px 15px -7px rgb(0 0 0 /5%);
+}
+
+.container__form-all {
+    padding: 25px 27px;
+}
+
+.container__form-heading {
+    font-size: 2.5rem;
+}
+
+.container__form-text {
+    display: block;
+    margin-top: 26px;
+    font-size: 1.8rem;
+}
+
+.container__form-login {}
+
+.container__form-input {
+    position: relative;
+    margin-top: 22px;
+}
+
+.container__form-input-child {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 18px 20px;
+    border-radius: 50px;
+    outline: none;
+}
+
+.container__form-input-child:focus {
+    border: 1px solid red;
+}
+
+.container__form-input-icon {
+    position: absolute;
+    right: 20px;
+    top: 38%;
+    font-size: 1.5rem;
+    color: #4c4f4c;
+}
+
+.container__form-registration-icon {
+    position: absolute;
+    right: 20px;
+    top: 58%;
+    font-size: 1.5rem;
+    color: #4c4f4c;
+}
+
+.button {
+    margin: 32px 0 38px 0;
+}
+
+.btn {
+    border: none;
+    width: 100%;
+    padding: 15px 14px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #f66239, #f68839);
+    color: #fff;
+    cursor: pointer;
+}
+
+.button:hover .btn {
+    animation: btn ease-in 0.5s;
+}
+
+@keyframes btn {
+    from {
+        background-image: linear-gradient(to left, #f66239, #f68839);
+    }
+    to {
+        /* background-image: linear-gradient(to left, #f66239, #f68839); */
+    }
+}
+
+.container__form-login-all {
+    text-align: center;
+}
+
+.container__form-forgot-link:hover {
+    color: #000;
+}
+
+.container__form-forgot-text {
+    font-size: 1.7rem;
+    color: #414049;
+}
+
+.container__form-forgot-link {
+    text-decoration: none;
+    color: #f6653f;
+}
+
+.container__form-noaccount {}
+
+.container__form-noaccount-text {
+    font-size: 1.6rem;
+    margin: 40px 0 42px 0;
+}
+
+.container__form-noaccount-or {
+    font-size: 1.6rem;
+}
+
+.container__form-noaccount-link {
+    text-decoration: none;
+    color: #f6653f;
+}
+
+.container__form-loginapp {
+    margin: 56px 0 32px 0;
+    font-size: 1.7rem;
+    color: #6a6462;
+}
+
+.container__form-loginapp-child .container__form-loginapp-child-link:hover {
+    cursor: pointer;
+    color: #f6653f;
+}
+
+.container__form-loginapp-child {
+    border: 1px solid #efefef;
+    padding: 16px;
+    border-radius: 50px;
+    margin-top: 18px;
+}
+
+.container__form-loginapp-child-link {
+    text-decoration: none;
+    color: #776664;
+}
+
+.container__form-icon {
+    float: right;
+}
+
+
+/* Đăng ký */
+
+.container__form-registration-label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.container__form-registration-number {
+    font-size: 1.6rem;
+    padding: 12px 16px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color: #f6f6f6;
+    line-height: 2;
+}
+
+.footer__register {
+    margin-top: 520px;
+}
