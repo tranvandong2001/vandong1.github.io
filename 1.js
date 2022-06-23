@@ -25,21 +25,4 @@ changeImg = function() {
 
 setInterval(changeImg, 2000)
 
-// thông báo đầu trang
 
-function thongbao() {
-    var cm;
-
-
-    // Lấy thông tin 
-    cm = prompt('Bạn bao nhiêm cm ? ');
-    if (cm >= 20) {
-        alert('Wow!');
-        prompt('Bạn để số điện thoại ở đây nhé, anh yêu bạn!')
-    } else {
-        alert('Của bạn ngắn quá haizz! Thật là thất vọng quá đi')
-    }
-
-}
-
-thongbao();
